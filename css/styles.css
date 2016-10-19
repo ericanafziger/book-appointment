@@ -11,3 +11,13 @@ input {
 #datepicker {
   background-color: white;
 }
+#confirmation {
+  display: none;
+}
+#length {
+  width: 30%;
+  float: right;
+}
+#confirmation span {
+  font-weight: bold;
+}
