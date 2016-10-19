@@ -1,22 +1,24 @@
 $(document).ready(function(){
-console.log("page ready");
-  $(function(){
-    $("#datepicker").datepicker();
-  });
-console.log("date function done");
+// console.log("page ready");
+//   $(function(){
+//     $("#datepicker").datepicker();
+//   });
 // debugger;
   $("#booking form").submit(function(event) {
 
-console.log("function start");
     var yourNameInput = $("input#yourName").val();
     var datepickerInput = $("input#datepicker").val();
     var lengthInput = $("#length").val();
     var commentsInput = $("input#comments").val();
-console.log("variables set");
+    var colorInput = $("input#color").val();
+    var therapyInput = $("input:radio[name=therapy]:checked").val();
+
     $(".yourName").text(yourNameInput);
     $(".datepicker").text(datepickerInput);
     $(".length").text(lengthInput);
     $(".comments").text(commentsInput);
+    $(".color").text(colorInput);
+    $(".therapy").text(therapyInput);
 
     $("#booking").hide();
     $("#confirmation").show();

@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -11,36 +12,77 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="jumbotron">Book your appointment today!</h1>
       <div id="booking">
-        <form>
-          <div class="form-group">
-            <label for="yourName">Enter your name:</label>
-            <input id="yourName">
-          </div>
-          <div class="form-group">
-            <label for="datepicker">Pick an appointment date:</label>
-            <input id="datepicker">
-          </div>
-          <div class="form-group">
-            <label for="length">Length of appointment:</label>
-            <select class="form-control" id="length">
-              <option>30 min</option>
-              <option>1 hour</option>
-              <option>1.5 hours</option>
-              <option>2 hours</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="comments">Additional comments:</label>
-            <input id="comments" type="text">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit your appointment
-          </button>
-        </form>
-      </div><!--end of booking div-->
+        <div class="well">
+          <h1 class="jumbotron">Book your appointment today!</h1>
+          <form>
+            <div class="form-group">
+              <label for="yourName">Enter your name:</label>
+              <input id="yourName">
+            </div>
+            <div class="form-group">
+              <label for="datepicker">Pick an appointment date:</label>
+              <input id="datepicker" type="date">
+            </div>
+            <div class="form-group">
+              <label for="length">Length of appointment:</label>
+              <select class="form-control" id="length">
+                <option>30 min</option>
+                <option>1 hour</option>
+                <option>1.5 hours</option>
+                <option>2 hours</option>
+              </select>
+            </div>
+            <br>
+            <div id="radiobuttons">
+              <label>What kind of therapy are you seeking?</label>
+              <div class="therapy-types">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="therapy" value="Psycho-Analysis" checked>
+                    Psycho-Analysis
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="therapy" value="Life Coaching">
+                    Life Coaching
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="therapy" value="Medical Marijuana">
+                    Medical Marijuana Prescription
+                  </label>
+                </div>
+            </div><!--therapy types div-->
+            </div><!--end of radio buttons-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="form-group">
+              <label for="color">What color is your mood today?</label>
+              <input id="color" class="form-control" type="color" value="#961616">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="comments">Additional comments:</label>
+              <input id="comments" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit your appointment
+            </button>
+          </form>
+        </div><!--end of booking div-->
+      </div>
       <div id="confirmation">
-        <p>Thank you <span class="yourName"></span>! Your appointment for <span class="length"></span> on <span class="datepicker"></span> has been booked.
+        <div class="well">
+          <h1 class="jumbotron">Your appointment has been booked!</h1>
+          <p>Thank you <span class="yourName"></span>! Your <span class="therapy"></span> appointment for <span class="length"></span> on <span class="datepicker"></span> has been booked. Your mood today is <span class="color"></span>.</p>
+          <h6>Additional comments:</h6>
+          <span class="comments"></span>
+        </div>
       </div><!--end of confirmation div-->
     </div><!--end of container-->
 

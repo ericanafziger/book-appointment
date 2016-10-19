@@ -1,12 +1,26 @@
+body {
+  background-color: #64233A;
+  font-family: 'Lato', sans-serif;
+}
+.jumbotron {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+}
+.container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
 input {
   float: right;
 }
 .well {
-  width: 50%;
+  /*width: 60%;*/
 }
 #comments {
-  height: 3em;
-  overflow: auto;
+  overflow:visible;
 }
 #datepicker {
   background-color: white;
@@ -15,9 +29,26 @@ input {
   display: none;
 }
 #length {
-  width: 30%;
+  width: 155px;
   float: right;
 }
 #confirmation span {
   font-weight: bold;
+}
+button {
+  margin-top: 20px;
+}
+span {
+font-weight: bolder;
+color: grey;
+}
+
+#color {
+  width: 155px;
+  float: right;
+}
+.therapy-types {
+  float: right;
+  width: 155px;
+  display: inline-block;
 }
