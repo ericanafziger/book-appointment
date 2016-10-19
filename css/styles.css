@@ -8,3 +8,6 @@ input {
   height: 3em;
   overflow: auto;
 }
+#datepicker {
+  background-color: white;
+}
