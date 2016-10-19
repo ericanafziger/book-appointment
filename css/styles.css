@@ -1,0 +1,10 @@
+input {
+  float: right;
+}
+.well {
+  width: 50%;
+}
+#comments {
+  height: 3em;
+  overflow: auto;
+}
