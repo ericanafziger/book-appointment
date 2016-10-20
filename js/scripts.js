@@ -17,12 +17,16 @@ $(document).ready(function(){
     $(".datepicker").text(datepickerInput);
     $(".length").text(lengthInput);
     $(".comments").text(commentsInput);
-    $(".color").text(colorInput);
+    $(".color").css('background-color', colorInput);
+    $("body").css('background-color', colorInput);
     $(".therapy").text(therapyInput);
 
     $("#booking").hide();
     $("#confirmation").show();
     event.preventDefault();
   });
-
+  
+  $("#confirmation").click(function(event) {
+     location.reload();
+   });
 });

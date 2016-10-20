@@ -2,6 +2,41 @@ body {
   background-color: #64233A;
   font-family: 'Lato', sans-serif;
 }
+
+ button {
+   margin-top: 20px;
+ }
+ span {
+ font-weight: bolder;
+ color: grey;
+ }
+input {
+  float: right;
+}
+
+#confirmation span {
+  font-weight: bold;
+}
+#comments {
+  overflow:visible;
+}
+#datepicker {
+  background-color: white;
+}
+#confirmation {
+  display: none;
+  font-size: 120%;
+}
+#length, #color, .therapy-types {
+  width: 155px;
+  float: right;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
 .jumbotron {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: white;
@@ -12,43 +47,3 @@ body {
   justify-content: center;
   align-items: center;
  }
-
-input {
-  float: right;
-}
-.well {
-  /*width: 60%;*/
-}
-#comments {
-  overflow:visible;
-}
-#datepicker {
-  background-color: white;
-}
-#confirmation {
-  display: none;
-}
-#length {
-  width: 155px;
-  float: right;
-}
-#confirmation span {
-  font-weight: bold;
-}
-button {
-  margin-top: 20px;
-}
-span {
-font-weight: bolder;
-color: grey;
-}
-
-#color {
-  width: 155px;
-  float: right;
-}
-.therapy-types {
-  float: right;
-  width: 155px;
-  display: inline-block;
-}
